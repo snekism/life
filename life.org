@@ -1,3 +1,9 @@
+#+TITLE: ssss
+#+AUTHOR: snekism
+#+LANGUAGE: fr
+#+EXPORT_FILE_NAME: index.html
+#+HTML_HEAD: <link rel="stylesheet" href="https://sandyuraz.com/styles/org.min.css">
+
 
 * starting a mind blog
 
@@ -75,3 +81,62 @@
   you.. respect/care/affection is such a big factor in how we work. A
   good king could make a whole nation work twice better just by his
   appreciation only.
+
+* redinho waste
+
+  https://completemusicupdate.com/wp-content/uploads/2017/10/tomcalvertzanbor1250.jpg
+
+  | https://imgur.com/a/u9ZhXeZ  |
+  |------------------------------|
+  | https://archive.is/wip/hamjV |
+
+  see this pic. a busted synth.. parts out in the open, internals
+  exposed, design off.
+
+  that thing was an epic item in the 90s, high valued device or toy,
+  for a high valued art form gone semi-mainstream.
+
+  but it was fabricated.. yet it's not what it was important for, it's
+  that glow from how it looks and convey it's use and
+  capabilities. how you feel and interact with it. how it embodies the
+  desires and factors of an era.
+
+  something that I consider timeless and more important than the
+  current thinking about innovation. especially the immaterial side of
+  new tech.
+  
+* phases and big picture
+
+  few years earlier i was a slacker, illegal streaming and porn was my
+  daily life, sleeping the day.. life felt like shit but nothing near
+  close to how heavy, difficult and painful it is now. The irony is
+  that I do 100x more..
+
+
+  
+* era of simulacre
+
+  we're being sold that more data, more pics, more pixels is
+  better. these were side bonuses of a good life, having good times
+  and enough more to buy a camera, but the camera means nothing. old
+  fading 70s pics, blurry pics .. photo albums with 10 .. have more
+  worth than my google photo account filled with 1000s of superb (not
+  really) shots of my lonely sad self.
+
+* inotify upload
+
+  ```inotifywait -q -m -e CLOSE_WRITE --format="git commit -m 'auto
+  commit' %w && git push origin <<branch>>" <<file>> | bash```
+
+* to drop or not to drop
+
+  Apres la tension et la douleur des derniers jours, je me sens
+  vide. J'ai plus la reponse anxieuse qui me fait vouloir
+  lutter.. j'abandonne mes parents a leur misere et je vais finir ma
+  vie tristement un peu plus loin.
+
+  La culpabilite me detruit toujours. Et c'est normal.
+
+  Suis-je le seul responsable..
+
+  00
