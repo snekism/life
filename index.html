@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2021-02-11 Thu 12:11 -->
+<!-- 2021-02-12 Fri 10:46 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ssss</title>
@@ -40,7 +40,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -52,7 +52,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -195,50 +195,26 @@
 </style>
 <link rel="stylesheet" href="https://sandyuraz.com/styles/org.min.css">
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -248,39 +224,42 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org5ce05fe">1. starting a mind blog</a></li>
-<li><a href="#org2444208">2. state of mind @ Sat 30 Jan 2021 09:34:57 AM CET</a></li>
-<li><a href="#orgc6dd3f3">3. i'm tired, my age and mindset relationship</a></li>
-<li><a href="#org5d1227f">4. github.io activated</a></li>
-<li><a href="#orge44a446">5. situations at the house not better</a></li>
-<li><a href="#orgaa55d26">6. work - volunteering</a></li>
-<li><a href="#org1e4b159">7. redinho waste</a></li>
-<li><a href="#org6183a3f">8. phases and big picture</a></li>
-<li><a href="#org2854867">9. era of simulacre</a></li>
-<li><a href="#org6c570a1">10. inotify upload</a></li>
-<li><a href="#org4330dcc">11. to drop or not to drop</a></li>
-<li><a href="#org4654dab">12. recovery</a></li>
-<li><a href="#orga027b71">13. trading sucks and doesn't</a></li>
-<li><a href="#org5d3d48e">14. sour pain, deep and wide, silence</a></li>
-<li><a href="#org0ca153d">15. dignity and life</a></li>
-<li><a href="#org2a28404">16. irc</a></li>
-<li><a href="#orga9275c4">17. elders</a></li>
-<li><a href="#org76a6ead">18. life</a></li>
-<li><a href="#org78a5469">19. importance</a></li>
-<li><a href="#org77f74c3">20. self talk</a></li>
-<li><a href="#org044fb9a">21. reconnect forget forgive confess</a></li>
-<li><a href="#org35b5e15">22. when you can't cry anymore</a></li>
-<li><a href="#org3a32322">23. shrink limits - hate - grief</a></li>
-<li><a href="#org7012bdd">24. ground to nothing</a></li>
-<li><a href="#orgd910f17">25. blips of joy</a></li>
-<li><a href="#orgb0173f5">26. what to do.</a></li>
+<li><a href="#orgb0aae91">1. starting a mind blog</a></li>
+<li><a href="#org4fe4173">2. state of mind @ Sat 30 Jan 2021 09:34:57 AM CET</a></li>
+<li><a href="#org6bde8b9">3. i'm tired, my age and mindset relationship</a></li>
+<li><a href="#org8654d6c">4. github.io activated</a></li>
+<li><a href="#org65cfa75">5. situations at the house not better</a></li>
+<li><a href="#orgd89ec6d">6. work - volunteering</a></li>
+<li><a href="#orge52621a">7. redinho waste</a></li>
+<li><a href="#org2bfe5f5">8. phases and big picture</a></li>
+<li><a href="#orgb36b64c">9. era of simulacre</a></li>
+<li><a href="#orgfdd1864">10. inotify upload</a></li>
+<li><a href="#orgb4745a6">11. to drop or not to drop</a></li>
+<li><a href="#org1c6cc18">12. recovery</a></li>
+<li><a href="#org1630399">13. trading sucks and doesn't</a></li>
+<li><a href="#org82a4666">14. sour pain, deep and wide, silence</a></li>
+<li><a href="#orgef92335">15. dignity and life</a></li>
+<li><a href="#org7f57fc2">16. irc</a></li>
+<li><a href="#org7babfcf">17. elders</a></li>
+<li><a href="#org829f77a">18. life</a></li>
+<li><a href="#org64ade0c">19. importance</a></li>
+<li><a href="#org379161d">20. self talk</a></li>
+<li><a href="#org0e82c99">21. reconnect forget forgive confess</a></li>
+<li><a href="#orgdf8a28e">22. when you can't cry anymore</a></li>
+<li><a href="#orgeb42efb">23. shrink limits - hate - grief</a></li>
+<li><a href="#org32ad7a6">24. ground to nothing</a></li>
+<li><a href="#org0c8f6a7">25. blips of joy</a></li>
+<li><a href="#orgac52aa9">26. what to do.</a></li>
+<li><a href="#org351880d">27. death</a></li>
+<li><a href="#org8924e2f">28. reality is relative to short / long term understanding</a></li>
+<li><a href="#org1722c69">29. depression is void of emotional memory</a></li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-org5ce05fe" class="outline-2">
-<h2 id="org5ce05fe"><span class="section-number-2">1</span> starting a mind blog</h2>
+<div id="outline-container-orgb0aae91" class="outline-2">
+<h2 id="orgb0aae91"><span class="section-number-2">1</span> starting a mind blog</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 instead of venting on reddit and IRC and feel abusing others ears
@@ -292,8 +271,8 @@ diffusing negative emotions.. so I'm gonna do it a bit.
 </div>
 </div>
 
-<div id="outline-container-org2444208" class="outline-2">
-<h2 id="org2444208"><span class="section-number-2">2</span> state of mind @ Sat 30 Jan 2021 09:34:57 AM CET</h2>
+<div id="outline-container-org4fe4173" class="outline-2">
+<h2 id="org4fe4173"><span class="section-number-2">2</span> state of mind @ Sat 30 Jan 2021 09:34:57 AM CET</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 I went to a job interview, I was anxious, didn't want to go. It
@@ -308,8 +287,8 @@ group ? being around toys to play with ? (in that case cars).
 </div>
 </div>
 
-<div id="outline-container-orgc6dd3f3" class="outline-2">
-<h2 id="orgc6dd3f3"><span class="section-number-2">3</span> i'm tired, my age and mindset relationship</h2>
+<div id="outline-container-org6bde8b9" class="outline-2">
+<h2 id="org6bde8b9"><span class="section-number-2">3</span> i'm tired, my age and mindset relationship</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 i have a diploma, some skills, some motivation but at the same time
@@ -326,8 +305,8 @@ action to feel happy. A blend of all this.
 </div>
 </div>
 
-<div id="outline-container-org5d1227f" class="outline-2">
-<h2 id="org5d1227f"><span class="section-number-2">4</span> github.io activated</h2>
+<div id="outline-container-org8654d6c" class="outline-2">
+<h2 id="org8654d6c"><span class="section-number-2">4</span> github.io activated</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 spent 10 minutes setting up github as host for this.  felt real
@@ -337,8 +316,8 @@ sometimes, probably. Not important.
 </div>
 </div>
 
-<div id="outline-container-orge44a446" class="outline-2">
-<h2 id="orge44a446"><span class="section-number-2">5</span> situations at the house not better</h2>
+<div id="outline-container-org65cfa75" class="outline-2">
+<h2 id="org65cfa75"><span class="section-number-2">5</span> situations at the house not better</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 father is really overwhelming, cranky and heavy.. the more a
@@ -369,8 +348,8 @@ Maybe I should talk to people and find support.
 </div>
 </div>
 
-<div id="outline-container-orgaa55d26" class="outline-2">
-<h2 id="orgaa55d26"><span class="section-number-2">6</span> work - volunteering</h2>
+<div id="outline-container-orgd89ec6d" class="outline-2">
+<h2 id="orgd89ec6d"><span class="section-number-2">6</span> work - volunteering</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 I like volunteering at the food charity. My tasks are basic. The
@@ -396,11 +375,11 @@ appreciation only.
 </div>
 </div>
 
-<div id="outline-container-org1e4b159" class="outline-2">
-<h2 id="org1e4b159"><span class="section-number-2">7</span> redinho waste</h2>
+<div id="outline-container-orge52621a" class="outline-2">
+<h2 id="orge52621a"><span class="section-number-2">7</span> redinho waste</h2>
 <div class="outline-text-2" id="text-7">
 
-<div class="figure">
+<div id="orga00faa3" class="figure">
 <p><img src="https://completemusicupdate.com/wp-content/uploads/2017/10/tomcalvertzanbor1250.jpg" alt="tomcalvertzanbor1250.jpg" />
 </p>
 </div>
@@ -448,8 +427,8 @@ new tech.
 </div>
 </div>
 
-<div id="outline-container-org6183a3f" class="outline-2">
-<h2 id="org6183a3f"><span class="section-number-2">8</span> phases and big picture</h2>
+<div id="outline-container-org2bfe5f5" class="outline-2">
+<h2 id="org2bfe5f5"><span class="section-number-2">8</span> phases and big picture</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 few years earlier i was a slacker, illegal streaming and porn was my
@@ -462,8 +441,8 @@ that I do 100x more..
 
 
 
-<div id="outline-container-org2854867" class="outline-2">
-<h2 id="org2854867"><span class="section-number-2">9</span> era of simulacre</h2>
+<div id="outline-container-orgb36b64c" class="outline-2">
+<h2 id="orgb36b64c"><span class="section-number-2">9</span> era of simulacre</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 we're being sold that more data, more pics, more pixels is
@@ -476,18 +455,18 @@ really) shots of my lonely sad self.
 </div>
 </div>
 
-<div id="outline-container-org6c570a1" class="outline-2">
-<h2 id="org6c570a1"><span class="section-number-2">10</span> inotify upload</h2>
+<div id="outline-container-orgfdd1864" class="outline-2">
+<h2 id="orgfdd1864"><span class="section-number-2">10</span> inotify upload</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 ```inotifywait -q -m -e CLOSE<sub>WRITE</sub> &#x2013;format="git commit -m 'auto
-commit' %w &amp;&amp; git push origin <a id="org4000b7e"></a>" <a id="org195a40b"></a> | bash```
+commit' %w &amp;&amp; git push origin <a id="orged96aba"></a>" <a id="org8a5bb95"></a> | bash```
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4330dcc" class="outline-2">
-<h2 id="org4330dcc"><span class="section-number-2">11</span> to drop or not to drop</h2>
+<div id="outline-container-orgb4745a6" class="outline-2">
+<h2 id="orgb4745a6"><span class="section-number-2">11</span> to drop or not to drop</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 Apres la tension et la douleur des derniers jours, je me sens
@@ -511,8 +490,8 @@ Suis-je le seul responsable..
 </div>
 
 
-<div id="outline-container-org4654dab" class="outline-2">
-<h2 id="org4654dab"><span class="section-number-2">12</span> recovery</h2>
+<div id="outline-container-org1c6cc18" class="outline-2">
+<h2 id="org1c6cc18"><span class="section-number-2">12</span> recovery</h2>
 <div class="outline-text-2" id="text-12">
 <p>
 is it possible I recover to a normal state of existence ? my
@@ -525,8 +504,8 @@ my soul is dust in the wind.
 </div>
 </div>
 
-<div id="outline-container-orga027b71" class="outline-2">
-<h2 id="orga027b71"><span class="section-number-2">13</span> trading sucks and doesn't</h2>
+<div id="outline-container-org1630399" class="outline-2">
+<h2 id="org1630399"><span class="section-number-2">13</span> trading sucks and doesn't</h2>
 <div class="outline-text-2" id="text-13">
 <p>
 trading is a soulless game where someone gives you his money so he
@@ -571,8 +550,8 @@ you have to tame fear, thus design plans to deal with all outcomes
 </div>
 </div>
 
-<div id="outline-container-org5d3d48e" class="outline-2">
-<h2 id="org5d3d48e"><span class="section-number-2">14</span> sour pain, deep and wide, silence</h2>
+<div id="outline-container-org82a4666" class="outline-2">
+<h2 id="org82a4666"><span class="section-number-2">14</span> sour pain, deep and wide, silence</h2>
 <div class="outline-text-2" id="text-14">
 <p>
 i want to leave 'these persons' away.. i only feel happy when I
@@ -673,8 +652,8 @@ it mean you tried
 </div>
 </div>
 
-<div id="outline-container-org0ca153d" class="outline-2">
-<h2 id="org0ca153d"><span class="section-number-2">15</span> dignity and life</h2>
+<div id="outline-container-orgef92335" class="outline-2">
+<h2 id="orgef92335"><span class="section-number-2">15</span> dignity and life</h2>
 <div class="outline-text-2" id="text-15">
 <p>
 forgot.
@@ -682,8 +661,8 @@ forgot.
 </div>
 </div>
 
-<div id="outline-container-org2a28404" class="outline-2">
-<h2 id="org2a28404"><span class="section-number-2">16</span> irc</h2>
+<div id="outline-container-org7f57fc2" class="outline-2">
+<h2 id="org7f57fc2"><span class="section-number-2">16</span> irc</h2>
 <div class="outline-text-2" id="text-16">
 <p>
 175
@@ -701,8 +680,8 @@ own son | &lt;snek76`&gt; she claim she 'loves' me all the fuckin time |
 </div>
 
 
-<div id="outline-container-orga9275c4" class="outline-2">
-<h2 id="orga9275c4"><span class="section-number-2">17</span> elders</h2>
+<div id="outline-container-org7babfcf" class="outline-2">
+<h2 id="org7babfcf"><span class="section-number-2">17</span> elders</h2>
 <div class="outline-text-2" id="text-17">
 <p>
 most of my mother family is annoying, sad, sick.
@@ -723,8 +702,8 @@ sacred. Roots you shall not break.
 </div>
 </div>
 
-<div id="outline-container-org76a6ead" class="outline-2">
-<h2 id="org76a6ead"><span class="section-number-2">18</span> life</h2>
+<div id="outline-container-org829f77a" class="outline-2">
+<h2 id="org829f77a"><span class="section-number-2">18</span> life</h2>
 <div class="outline-text-2" id="text-18">
 <p>
 why am i stuck ? cause I didn't have the possibilty of living. I
@@ -761,8 +740,8 @@ people never hear me, never listen, never understand..
 </div>
 
 
-<div id="outline-container-org78a5469" class="outline-2">
-<h2 id="org78a5469"><span class="section-number-2">19</span> importance</h2>
+<div id="outline-container-org64ade0c" class="outline-2">
+<h2 id="org64ade0c"><span class="section-number-2">19</span> importance</h2>
 <div class="outline-text-2" id="text-19">
 <p>
 some stuff have more value than others
@@ -789,8 +768,8 @@ too.. they walk with the burden of the void.
 </div>
 </div>
 
-<div id="outline-container-org77f74c3" class="outline-2">
-<h2 id="org77f74c3"><span class="section-number-2">20</span> self talk</h2>
+<div id="outline-container-org379161d" class="outline-2">
+<h2 id="org379161d"><span class="section-number-2">20</span> self talk</h2>
 <div class="outline-text-2" id="text-20">
 <p>
 I ramble about me all the time
@@ -798,8 +777,8 @@ I ramble about me all the time
 </div>
 </div>
 
-<div id="outline-container-org044fb9a" class="outline-2">
-<h2 id="org044fb9a"><span class="section-number-2">21</span> reconnect forget forgive confess</h2>
+<div id="outline-container-org0e82c99" class="outline-2">
+<h2 id="org0e82c99"><span class="section-number-2">21</span> reconnect forget forgive confess</h2>
 <div class="outline-text-2" id="text-21">
 <p>
 can i reconnect with people around ?
@@ -819,8 +798,8 @@ it's a lose lose situation
 </div>
 </div>
 
-<div id="outline-container-org35b5e15" class="outline-2">
-<h2 id="org35b5e15"><span class="section-number-2">22</span> when you can't cry anymore</h2>
+<div id="outline-container-orgdf8a28e" class="outline-2">
+<h2 id="orgdf8a28e"><span class="section-number-2">22</span> when you can't cry anymore</h2>
 <div class="outline-text-2" id="text-22">
 <p>
 Confused and painful life to that point is hard to deal. it's a sad
@@ -849,8 +828,8 @@ I'll have to confess. I'll die because of it but I'll die human.
 </div>
 </div>
 
-<div id="outline-container-org3a32322" class="outline-2">
-<h2 id="org3a32322"><span class="section-number-2">23</span> shrink limits - hate - grief</h2>
+<div id="outline-container-orgeb42efb" class="outline-2">
+<h2 id="orgeb42efb"><span class="section-number-2">23</span> shrink limits - hate - grief</h2>
 <div class="outline-text-2" id="text-23">
 <p>
 new therapist is talkative, it helps a lot for me, silence is not
@@ -880,8 +859,8 @@ become sad and suffering again.
 </div>
 
 
-<div id="outline-container-org7012bdd" class="outline-2">
-<h2 id="org7012bdd"><span class="section-number-2">24</span> ground to nothing</h2>
+<div id="outline-container-org32ad7a6" class="outline-2">
+<h2 id="org32ad7a6"><span class="section-number-2">24</span> ground to nothing</h2>
 <div class="outline-text-2" id="text-24">
 <p>
 i lived 30 years following others, accepting in secret what i didn't
@@ -949,8 +928,8 @@ it's difficult to deal with so many extinctions of the self.
 </div>
 </div>
 
-<div id="outline-container-orgd910f17" class="outline-2">
-<h2 id="orgd910f17"><span class="section-number-2">25</span> blips of joy</h2>
+<div id="outline-container-org0c8f6a7" class="outline-2">
+<h2 id="org0c8f6a7"><span class="section-number-2">25</span> blips of joy</h2>
 <div class="outline-text-2" id="text-25">
 <p>
 i'm still guilty, still angry, still violent, still hateful
@@ -1008,8 +987,8 @@ never understand, and keep doing it. hhhaa
 </div>
 </div>
 
-<div id="outline-container-orgb0173f5" class="outline-2">
-<h2 id="orgb0173f5"><span class="section-number-2">26</span> what to do.</h2>
+<div id="outline-container-orgac52aa9" class="outline-2">
+<h2 id="orgac52aa9"><span class="section-number-2">26</span> what to do.</h2>
 <div class="outline-text-2" id="text-26">
 <p>
 I keep having memories of 'friends' i somehow hate.  Two things, I
@@ -1043,11 +1022,85 @@ day. No balance.
 </p>
 </div>
 </div>
+
+
+<div id="outline-container-org351880d" class="outline-2">
+<h2 id="org351880d"><span class="section-number-2">27</span> death</h2>
+<div class="outline-text-2" id="text-27">
+<p>
+they ignored my suffering when i was silent
+</p>
+
+<p>
+they ignored my suffering when i was vocal
+</p>
+
+<p>
+they ignored my wounds, my injuries and made me suffer more for
+their petty needs
+</p>
+
+<p>
+supporting their manias or violence, my mother going insane over
+details on her mother's grave
+</p>
+
+<p>
+they harm me emotionally on a regular basis
+</p>
+
+<p>
+sometime they even claim they want to forget me
+</p>
+
+<p>
+i was doing great things, recovering cleanly, working nicely, being
+healthy
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8924e2f" class="outline-2">
+<h2 id="org8924e2f"><span class="section-number-2">28</span> reality is relative to short / long term understanding</h2>
+<div class="outline-text-2" id="text-28">
+<p>
+kinda like .. spacetime.. every local spot has its own reality due to ignorance of further away
+what's "happens" in the near time has no real bearing on what is true or real
+things that are true now may just appear true because they hold
+due to whatever temporary reasons
+even though quite later they'll fail and be replaced by the opposite
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1722c69" class="outline-2">
+<h2 id="org1722c69"><span class="section-number-2">29</span> depression is void of emotional memory</h2>
+<div class="outline-text-2" id="text-29">
+<p>
+you remember good
+you want more
+you happy
+you go for the same good things again
+</p>
+
+<p>
+depression robs this ?
+</p>
+
+<p>
+the memory isn't there, is contradicted by other memories
+</p>
+
+<p>
+you have nothing to seek
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Auteur: snekism</p>
-<p class="date">Created: 2021-02-11 Thu 12:11</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2021-02-12 Fri 10:46</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
