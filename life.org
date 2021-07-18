@@ -1270,3 +1270,27 @@ c'est..
 
   je suis toujours jaloux et ca m'emmerde et je comprends toujours pas
   c'est chelou
+
+* world dynamics
+
+  le monde n'est-il pas surtout un jeu de vase communicant
+  et les limites dans la pyramide sociale domine les futurs possibles
+
+* mathematics pedagogy
+  medianes(trices) triangle convergente preuve
+  https://www.clayinformatique.ch/mathsenquestions2/wp-content/uploads/2016/02/T.-Droites-remarquables-du-triangle.jpg
+
+  2 cotes A B => mediatrices croisent => point P
+  soit droite L passant par P
+
+  Lp (perpendiculaire a L) croise A B une infinite de fois
+  Soit I l'intersection de L et Lp
+  Soit (LpA)I = I(LpB) et L la mediatrice de LpALpB
+  Sinon LpAI et LpBI different
+  il suffit de decaler Lp plus pres ou plus loin sur L
+  pour atteindre un point d'equilibre ou LpAI = LpBI
+
+  aka une 3eme mediatrice est toujours constructible
+
+  aka les mediatrices convergent en 1 point
+
